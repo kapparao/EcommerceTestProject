@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = { "src/test/resources/featureFile" }, 
 		glue = { "stepDefinaion", "hooks" },
-		plugin = {"pretty"}
+		plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		
 
 )
